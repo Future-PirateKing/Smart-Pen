@@ -2,13 +2,16 @@
   "name": "smart-pen-desktop",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "electron": "electron .", // <-- run electron
+    "electron-build": "ng build --prod && electron ." // <-- build app, then run electron
   },
   "private": true,
   "dependencies": {
