@@ -1,3 +1,19 @@
-<p>
-  main-area works!
-</p>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened="true" #sidenav>
+    <div class="sidenav-title">
+      <span class="chip">Edit Tools</span>
+    </div>
+    <div id="colors">
+      <h6 class="center">Colors</h6>
+      <ul>
+        <li [class]="color" [ngClass]="{'z-depth-2 waves-effect': true}" *ngFor="let color of colors;let i=index" [matTooltip]="color"></li>
+      </ul>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header></app-header>
+
+    <i id="sidenavClose" (click)="sidenav.toggle()" class="material-icons">chevron_right</i>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>

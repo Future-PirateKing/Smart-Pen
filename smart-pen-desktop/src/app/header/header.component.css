@@ -1,0 +1,10 @@
+nav {
+    padding: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #1E2127;
+    min-height: 40px;
+    position: fixed;
+    
+}
